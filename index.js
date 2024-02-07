@@ -40,7 +40,7 @@ function promptUser() {
         },
         {
             type: 'list',
-            name: 'liscense',
+            name: 'license',
             message: 'Choose a liscense option:',
             choices: licenseOptions,
         },
