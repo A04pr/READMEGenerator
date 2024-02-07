@@ -19,7 +19,7 @@ Simply clone the code from GitHub!
 Usage:
 Navigate to the READMEGENERATOR folder in the command line and enter 'node index.js'. This will prompt the user with a series of questions that are required to enter data into the README. Once the user has entered all the README data, chosen a license, and entered their github/email, the README generator will print the data into the README.md file.
 
-Video Walkthrough: (./utils/README.md)
+Video Walkthrough: ("https://github.com/A04pr/READMEGenerator/blob/main/utils/README.md%20-%20READMEGenerator%20-%20Visual%20Studio%20Code%202024-02-07%2010-18-16.mp4")
 
 Contribution:
 This is a closed project, there is no need for contribution.
