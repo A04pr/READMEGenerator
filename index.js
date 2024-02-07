@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateREADME = require('./utils/generateReadme')
 
 // A short list of license options for the user to choose from
 const licenseOptions = ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3-Clause', 'None'];
@@ -78,45 +79,6 @@ async function init() {
     }
 }
 
-// Converts the data from the promptUser function into text to later be written into the readme file
-function generateREADME(data) {
-    const readmeContent = 
-`${data.title}
-
-Description:
-${data.description}
-
-Table of Contents:
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution](#contribution)
-- [Tests](#tests)
-- [License](#license)
-- [Questions](#questions)
-
-Installation:
-${data.installation}
-
-Usage:
-${data.usage}
-
-Contribution:
-${data.contribution}
-
-Tests:
-${data.test}
-
-License:
-This project is licensed under the ${data.license} license.
-
-Questions:
-For any questions, please feel free to contact via:
-- GitHub: [${data.username}](https://github.com/${data.username})
-- Email: ${data.email}`;
-
-    return readmeContent;
-
-}
 
 // Function call to initialize app
 init();
