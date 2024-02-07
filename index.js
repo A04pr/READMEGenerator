@@ -71,9 +71,9 @@ async function init() {
     try {
         const userData = await promptUser();
 
-        const READMEContent = generateREADME(userData);
+        const generatedReadme = generateREADME(userData);
 
-        writeToFile('README.md', READMEContent);
+        writeToFile('README.md', generatedReadme);
     } catch (error) {
         console.error('An error occurred:', error);
     }
